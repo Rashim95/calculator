@@ -38,6 +38,10 @@ button{
     font-weight: 800;
     background-color: grey;
 }
+.equal, .operator{
+    background-color: blue;
+}
+
 
 button:hover{
     background-color: coral;
