@@ -70,8 +70,14 @@ function operate(){
         previousValue -= currentValue; 
      } else if(operator === 'x'){
         previousValue *= currentValue; 
+     } else if(operator === 'mod'){
+        previousValue %= currentValue;
      } else {
+        if(currentValue !== '0'){
         previousValue /= currentValue;
+        }else{
+            return "Error! Cannot divide by 0";
+        }
      }
      previousValue = roundNumber(previousValue);
      previousValue = previousValue.toString();
